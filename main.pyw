@@ -20,7 +20,6 @@ class ADSDictator(QMainWindow):
         super().__init__()
         self.initUI()
 
-
     # noinspection PyPep8Naming
     def initUI(self):
         pass
