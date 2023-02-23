@@ -3,6 +3,7 @@
 
 import sys
 
+from PyQt5 import QtGui, uic  # noqa
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
 __author__ = "Ilia B. Anosov"
@@ -22,7 +23,8 @@ class ADSDictator(QMainWindow):
 
     # noinspection PyPep8Naming
     def initUI(self):
-        pass
+        uic.loadUi('static/ui/main.ui', self)
+        self.setWindowIcon(QtGui.QIcon('static/img/logo.png'))
 
 
 if __name__ == '__main__':
